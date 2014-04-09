@@ -1,0 +1,15 @@
+<h1>Editing list</h1>
+
+<%= render 'form' %>
+
+<% @list.items.each do |item| %>
+  <% if !(item.is_complete) %>
+    <tr>
+      <td colspan="2"><%= item.text %></td>
+      <td colspan="2"><%= item.priority %></td>
+    </tr>
+  <% end %>
+<% end %>
+
+<%= link_to 'Show', @list %> |
+<%= link_to 'Back', lists_path %>
