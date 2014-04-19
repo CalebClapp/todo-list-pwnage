@@ -1,16 +1,23 @@
-<div class="<%= controller.controller_name %>"><h1>Listing lists</h1>
+<div class="<%= controller.controller_name %>">
+
+  <div class="show">
+
+    <header class="cf">
+      <h1>All Lists</h1>
+      <div class="actions">
+        <%= link_to 'New List', new_list_path %>  
+      </div> 
+    </header>
 
     <% @lists.each do |list| %>
+      <div class="list cf">
+        <h2><%= link_to "#{list.name.upcase}", list %></h2>
 
-      <h2><%= link_to "#{list.name.upcase}", list %></h2>
-
-      <!--<p><%= link_to 'Edit', edit_list_path(list) %></p> -->
-      <p><%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-      
-
+        <!--<p><%= link_to 'Edit', edit_list_path(list) %></p> -->
+        <%= link_to 'x', list, :class => 'destroy', method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
     <% end %>
 
-<br>
+  </div>
 
-<%= link_to 'New List', new_list_path %>
 </div>

@@ -1,3 +1,62 @@
 // Place all the styles related to the Lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.lists {
+
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  .show {
+
+    header {
+
+      h1 {
+
+        float: left;
+
+      }
+
+      .actions {
+
+        float: right;
+        padding-top: 17.24px;
+
+        a {
+          
+          font-size: 30px;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .list {
+    max-width: 480px;
+    padding-bottom: 10px;
+
+    h2 {
+      float: left;
+    }
+
+    .destroy {
+      color: #eee;
+      background-color: #f00;
+      padding: 6px;
+      font-size: 24px;
+      display: inline-block;
+      float: right;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #a00;
+      }
+    }
+
+  }
+
+}
