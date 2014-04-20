@@ -14,7 +14,7 @@ class ItemsController < ApplicationController
 
   # GET /items/new
   def new
-    @item = Item.new
+    @item = Item.new(:list_id => params[:list_id])
   end
 
   # GET /items/1/edit
@@ -56,7 +56,9 @@ class ItemsController < ApplicationController
   def destroy
     @item.destroy
     respond_to do |format|
-      format.html { redirect_to items_url }
+      format.html { redirect_to :controller => 'lists', 
+                                :action => 'show', 
+                                :id => @item.list.id   }
       format.json { head :no_content }
     end
   end

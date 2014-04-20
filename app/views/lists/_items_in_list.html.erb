@@ -9,8 +9,9 @@
     <% @list.items.each do |item| %>
       <% if !(item.is_complete) %>
         <tr>
-          <td colspan="2"><%= item.text %></td>
-          <td colspan="2"><%= item.priority %></td>
+          <td><%= item.text %></td>
+          <td><%= item.priority %></td>
+          <td><%= link_to 'x', item, :class => 'destroy', method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     <% end %> 
