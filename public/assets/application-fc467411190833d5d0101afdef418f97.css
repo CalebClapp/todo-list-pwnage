@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+ /*
+YUI 3.16.0 (build 76f0e08)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+body {
+  background: #ddd;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+/* line 5, /home/calebclapp/Desktop/ruby/todo-list-pwnage/app/assets/stylesheets/lists.css.scss */
+.lists {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* line 15, /home/calebclapp/Desktop/ruby/todo-list-pwnage/app/assets/stylesheets/lists.css.scss */
+.lists .show header h1 {
+  float: left;
+}
+/* line 21, /home/calebclapp/Desktop/ruby/todo-list-pwnage/app/assets/stylesheets/lists.css.scss */
+.lists .show header .actions {
+  float: right;
+  padding-top: 17.24px;
+}
+/* line 26, /home/calebclapp/Desktop/ruby/todo-list-pwnage/app/assets/stylesheets/lists.css.scss */
+.lists .show header .actions a {
+  font-size: 30px;
+}
+/* line 38, /home/calebclapp/Desktop/ruby/todo-list-pwnage/app/assets/stylesheets/lists.css.scss */
+.lists .list {
+  max-width: 480px;
+  padding-bottom: 10px;
+}
+/* line 42, /home/calebclapp/Desktop/ruby/todo-list-pwnage/app/assets/stylesheets/lists.css.scss */
+.lists .list h2 {
+  float: left;
+}
+/* line 46, /home/calebclapp/Desktop/ruby/todo-list-pwnage/app/assets/stylesheets/lists.css.scss */
+.lists .list .destroy {
+  color: #eee;
+  background-color: #f00;
+  padding: 6px;
+  font-size: 24px;
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+}
+/* line 55, /home/calebclapp/Desktop/ruby/todo-list-pwnage/app/assets/stylesheets/lists.css.scss */
+.lists .list .destroy:hover {
+  background-color: #a00;
+}
