@@ -1,11 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @list.name %>
-</p>
+<h2>
+  <%= link_to "#{ @list.name }", edit_list_path(@list) %>
+</h2>
 
 <%= render 'items_in_list' %>
 
+<%= link_to 'New Item', { :controller => 'items', 
+                          :action => 'new', 
+                          :list_id => @list.id } %> |
 <%= link_to 'Edit', edit_list_path(@list) %> |
 <%= link_to 'Back', lists_path %>
